@@ -48,7 +48,7 @@ def LastVacancy(request):
             return result_list
 
     hh = HHAPI('devops')
-    vacs = hh.get_data_vacancies('2022-12-23', 10)
+    vacs = hh.get_data_vacancies('2023-01-23', 10)
 
     last_vacancies = LastVacancyModel.objects.all()
     navigation = Navigation.objects.all()
